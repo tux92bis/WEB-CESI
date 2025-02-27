@@ -129,6 +129,22 @@
   background-color: #fff;
   margin-bottom: auto;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  min-width: 100wv;
+}
+.container, .w-container, .w-layout-layout {
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+
 
 .favoris {
   color: #000;
