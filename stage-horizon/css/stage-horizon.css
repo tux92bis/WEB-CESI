@@ -98,14 +98,26 @@
   justify-content: center;
   padding: 20px;
 }
-
+/*
 .w-layout-cell {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
   position: relative;
+}*/
+.w-layout-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+
 }
+
 
 .w-layout-hflex {
   flex-direction: row;
@@ -323,6 +335,7 @@ html, body {
 .cell-4 {
   border-radius: 20px;
 }
+/*
 .image-4 {
   margin-top: 5px;
   margin-left: 8px;
@@ -330,7 +343,15 @@ html, body {
   position: relative;
   top: -335px;
   left: 0;
+}*/
+.image-4 {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
+
 
 .heading {
   position: relative;
@@ -381,7 +402,7 @@ html, body {
 .favoris-btn.favori {
   color: gold;
 }
-
+/*
 .button-2 {
   background-color: #8b16a0;
   border-radius: 20px;
@@ -389,6 +410,18 @@ html, body {
   position: relative;
   top: 38px;
   left: 450px;
+}*/
+.button-2 {
+  background-color: #8b16a0;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
 }
 
 .button-2.accueil {
@@ -1067,4 +1100,34 @@ html, body {
 
 #w-node-db180c37-b239-5889-1006-1457f665630f-f8851d61 {
   grid-row: span 2 / span 2;
+}
+.pagination {
+  display: flex;
+  justify-content: center; /* Centre la pagination horizontalement */
+  align-items: center;
+  gap: 8px; /* Espacement entre les boutons */
+  margin-top: 30px; /* Espace avant la pagination */
+  padding: 10px;
+}
+
+.pagination a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.pagination a.active {
+  background-color: rgb(195, 195, 196);
+  color: white;
+  border-color: rgb(195, 195, 196);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-color: #bbb;
 }
