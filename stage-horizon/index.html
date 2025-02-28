@@ -20,7 +20,7 @@
         sizes="(max-width: 479px) 71vw, 112.99479675292969px" alt=""
         srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w"></a>
     <div class="menu w-container">
-      <nav class="w-nav-menu">
+      <nav>
         <a href="index.html" aria-current="page" class="a w--current">Accueil</a>
         <a href="favoris.html" class="favoris">Favoris</a>
         <a href="#" class="favoris">Offres de stage</a>
@@ -51,46 +51,52 @@
         class="search-button w-button" value="Rechercher"></form>
   </section>
   <div class="w-layout-vflex flex-block"></div>
-
-  <div class="filtres w-form">
+  <aside class="filtres w-form">
     <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form"
       data-wf-page-id="67b49e8f9c9f8a910dad1bf7" data-wf-element-id="2d372f55-fc3f-5eaf-7a6d-1992c8428c09">
       
+      <h3>Filtrer les offres</h3>
+
       <!-- Boutons radio -->
-      <label class="w-radio">
-        <input type="radio" id="radio-alternance" name="Type" class="w-form-formradioinput w-radio-input" value="Alternance">
-        <span class="w-form-label">Alternance</span>
-      </label>
-  
-      <label class="w-radio">
-        <input type="radio" id="radio-stage" name="Type" class="w-form-formradioinput w-radio-input" value="Stage">
-        <span class="w-form-label">Stage</span>
-      </label>
-  
+      <fieldset>
+        <legend>Type de contrat</legend>
+        <label class="w-radio">
+          <input type="radio" id="radio-alternance" name="Type" class="w-form-formradioinput w-radio-input" value="Alternance">
+          <span class="w-form-label">Alternance</span>
+        </label>
+
+        <label class="w-radio">
+          <input type="radio" id="radio-stage" name="Type" class="w-form-formradioinput w-radio-input" value="Stage">
+          <span class="w-form-label">Stage</span>
+        </label>
+      </fieldset>
+
       <!-- Cases à cocher -->
-      <label class="w-checkbox">
-        <input type="checkbox" id="checkbox-btp" name="checkbox-btp" class="w-form-formcheckboxinput w-checkbox-input">
-        <span class="w-form-label">BTP</span>
-      </label>
-  
-      <label class="w-checkbox">
-        <input type="checkbox" id="checkbox-s3e" name="checkbox-s3e" class="w-form-formcheckboxinput w-checkbox-input">
-        <span class="w-form-label">S3E</span>
-      </label>
-  
-      <label class="w-checkbox">
-        <input type="checkbox" id="checkbox-informatique" name="checkbox-informatique" class="w-form-formcheckboxinput w-checkbox-input">
-        <span class="w-form-label">Informatique</span>
-      </label>
-  
-      <label class="w-checkbox">
-        <input type="checkbox" id="checkbox-generaliste" name="checkbox-generaliste" class="w-form-formcheckboxinput w-checkbox-input">
-        <span class="w-form-label">Généraliste</span>
-      </label>
-  
+      <fieldset>
+        <legend>Domaines</legend>
+        <label class="w-checkbox">
+          <input type="checkbox" id="checkbox-btp" name="checkbox-btp" class="w-form-formcheckboxinput w-checkbox-input">
+          <span class="w-form-label">BTP</span>
+        </label>
+
+        <label class="w-checkbox">
+          <input type="checkbox" id="checkbox-s3e" name="checkbox-s3e" class="w-form-formcheckboxinput w-checkbox-input">
+          <span class="w-form-label">S3E</span>
+        </label>
+
+        <label class="w-checkbox">
+          <input type="checkbox" id="checkbox-informatique" name="checkbox-informatique" class="w-form-formcheckboxinput w-checkbox-input">
+          <span class="w-form-label">Informatique</span>
+        </label>
+
+        <label class="w-checkbox">
+          <input type="checkbox" id="checkbox-generaliste" name="checkbox-generaliste" class="w-form-formcheckboxinput w-checkbox-input">
+          <span class="w-form-label">Généraliste</span>
+        </label>
+      </fieldset>
+
     </form>
-  </div>
-  
+  </aside>
       <div id="w-node-_38b87cf2-cd7e-10d0-1a13-de02a947c1bc-0dad1bf7" class="w-layout-layout offres wf-layout-layout">
       <div class="w-layout-cell cell">
         <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy"  alt=""
@@ -99,8 +105,9 @@
           elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
           vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
           posuere.</p>
-        <a href="#" class="button-2 w-button">Postuler</a><img src="images/bouton-favori.png" loading="lazy" alt=""
-          class="image-6"><img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
+        <a href="#" class="button-2 w-button">Postuler</a>
+        <button class="favoris-btn">☆</button>
+        <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
       </div>
       <div class="w-layout-cell cell">
         <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
@@ -109,8 +116,9 @@
           elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
           vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
           posuere.</p>
-        <a href="#" class="button-2 w-button">Postuler</a><img src="images/bouton-favori.png" loading="lazy" alt=""
-          class="image-6"><img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
+        <a href="#" class="button-2 w-button">Postuler</a>
+        <button class="favoris-btn">☆</button>
+        <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
       </div>
       <div class="w-layout-cell cell">
         <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
@@ -119,8 +127,9 @@
           elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
           vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
           posuere.</p>
-        <a href="#" class="button-2 w-button">Postuler</a><img src="images/bouton-favori.png" loading="lazy" alt=""
-          class="image-6"><img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
+        <a href="#" class="button-2 w-button">Postuler</a>
+        <button class="favoris-btn">☆</button>
+        <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
       </div>
       <div class="w-layout-cell cell">
         <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
@@ -129,8 +138,9 @@
           elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
           vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
           posuere.</p>
-        <a href="#" class="button-2 w-button">Postuler</a><img src="images/bouton-favori.png" loading="lazy" alt=""
-          class="image-6"><img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
+        <a href="#" class="button-2 w-button">Postuler</a>
+        <button class="favoris-btn">☆</button>
+        <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
       </div>
     </div>
     <footer class="pied-de-page">

@@ -104,6 +104,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
+  position: relative;
 }
 
 .w-layout-hflex {
@@ -199,7 +200,7 @@ html, body {
   text-align: right;
   margin-left: 300px;
   margin-right: 2px;
-  position: absolute;
+  position: relative;
   inset: 0% 0% auto auto;
 }
 
@@ -322,15 +323,13 @@ html, body {
 .cell-4 {
   border-radius: 20px;
 }
-
 .image-4 {
   margin-top: 5px;
   margin-left: 8px;
   padding-top: 10px;
   position: relative;
-  top: -370px;
-  bottom: -200px;
-  left: 8px;
+  top: -335px;
+  left: 0;
 }
 
 .heading {
@@ -340,7 +339,10 @@ html, body {
 .heading-2 {
   position: relative;
   top: -2px;
-  left: 98px;
+  left: 60px;
+  font-size: 16px;
+  
+
 }
 
 .image-5 {
@@ -363,9 +365,21 @@ html, body {
   background-size: auto;
 }
 
-.image-6 {
-  position: relative;
-  left: 550px;
+.favoris-btn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  
+ 
+}
+.favoris-btn.favori {
+  color: gold;
 }
 
 .button-2 {
