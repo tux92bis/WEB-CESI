@@ -358,12 +358,12 @@ html, body {
   text-align: center;
   object-fit: fill;
   border-radius: 20px;
-  width: 80%;
+  width: 70%;
   height: auto;
   position: relative;
   top: -83px;
   left: 300px;
-  overflow: scroll;
+  
 }
 
 .cell {
@@ -493,7 +493,7 @@ html, body {
   margin-left: 20px;
   padding-left: 10px;
   position: relative;
-  top: 143px;
+  top: -60px;
 }
 
 .checkbox-field {
@@ -525,6 +525,7 @@ html, body {
 .cell-5 {
   border: 1px solid #000;
   border-radius: 20px;
+  
 }
 
 .image-9 {
@@ -1172,4 +1173,19 @@ html, body {
   background-color: #ddd;
   border-color: #bbb;
 }
-
+.liked-list {
+  grid-column-gap: 20px;
+  grid-row-gap: 7px;
+  text-align:center;
+  object-fit: fill;
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  position: relative;
+  top: 80px;
+  left: 80px;
+  /*layoutlayout*/
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}

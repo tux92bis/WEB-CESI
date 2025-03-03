@@ -19,84 +19,115 @@
   <header>
     <div data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease"
       role="banner" class="navbar w-nav">
-      <a href="#" class="w-nav-brand"><img width="113" sizes="(max-width: 479px) 71vw, 112.99479675292969px" alt=""
-          src="images/logo-site.png" loading="lazy"
-          srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w"></a>
+      <a href="#" class="w-nav-brand">
+        <img src="images/logo-site.png" loading="lazy" width="100"
+          sizes="(max-width: 479px) 71vw, 112.99479675292969px" alt=""
+          srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w">
+      </a>
       <div class="menu w-container">
-        <nav class="w-nav-menu">
-          <a href="index.html" class="favoris">Accueil</a>
-          <a href="#" class="favoris">Favoris</a>
+        <nav  class="navigation">
+          <a href="index.html" aria-current="page" class="a w--current">Accueil</a>
+          <a href="favoris.html" class="favoris">Favoris</a>
           <a href="#" class="favoris">Offres de stage</a>
           <a href="#" class="favoris">Candidatures</a>
           <a href="#" class="favoris">Entreprises</a>
         </nav>
-        <div class="w-nav-button">
-          <div data-delay="50" data-hover="false" class="w-dropdown">
+        <div  class="w-nav-button">
+          <div data-hover="false" data-delay="50" class="w-dropdown">
             <div class="compte w-dropdown-toggle">
               <div class="w-icon-dropdown-toggle"></div>
               <div> Compte</div>
             </div>
             <nav class="w-dropdown-list">
               <a href="#" class="dropdown-link w-dropdown-link">Ajouter une offre</a>
-              <a href="#" class="dropdown-link w-dropdown-link">Ajouter un utilisateur</a>
-              <a href="#" class="dropdown-link w-dropdown-link">Ajouter une entreprise</a>
+              <a href="#" class="dropdown-link-2 w-dropdown-link">Ajouter un utilisateur</a>
+              <a href="#" class="dropdown-link-3 w-dropdown-link">Ajouter une entreprise</a>
             </nav>
-          </div><img width="36" loading="lazy" alt="" src="images/generic-avatar.svg" class="image-7">
+          </div><img src="images/generic-avatar.svg" loading="lazy" width="36" alt="" class="image">
         </div>
       </div>
     </div>
   </header>
   <section class="bandeau">
     <h1 class="slogan"> Votre avenir commence ici !</h1>
-    <form action="/search" class="search w-form"><label></label><input class="search-input w-input"
-        autofocus  maxlength="256" name="query"
-        placeholder="Rechercher intitulé offre de stage/alternance/entreprise" type="search" id="search"
-        required=""><img loading="lazy" src="images/icon.svg" alt="" class="image-3"><input type="submit"
-        class="search-button w-button" value="Rechercher"></form>
+    <div class="search-bar-container">
+      <form id="search-form" method="get" action="#">
+        <input type="text" id="search" name="search" placeholder="Rechercher..." class="search-input">
+        <button type="submit" class="search-button">🔍</button>
+      </form>
+    </div>
   </section>
-  <div id="w-node-ebe5e118-38f7-5964-a46d-5ba3b2771353-92c2855e" class="w-layout-layout quick-stack wf-layout-layout">
+  <div id="w-node-_38b87cf2-cd7e-10d0-1a13-de02a947c1bc-0dad1bf7" class="liked-list wf-layout-layout">
     <div class="w-layout-cell cell-5">
-      <h2 class="heading-2">Entreprise</h2><img loading="lazy" alt="" src="images/bandeau-offre.png"
-        class="image-9">
+      <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy"  alt=""
+        class="image-5">
       <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
         elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
         vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
         posuere.</p>
-      <a href="#" class="button-2 accueil w-button">Postuler</a><img loading="lazy" src="images/bouton-favori.png"
-        alt="" class="image-10"><img width="37" loading="lazy" alt="" src="images/generic-avatar.svg" class="image-11">
+      <a href="#" class="button-2 w-button">Postuler</a>
+      <button class="favoris-btn">☆</button>
+      <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
     </div>
     <div class="w-layout-cell cell-5">
-      <h2 class="heading-2">Entreprise</h2><img  loading="lazy" alt="" src="images/bandeau-offre.png"
-        class="image-9">
+      <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
+        class="image-5">
       <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
         elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
         vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
         posuere.</p>
-      <a href="#" class="button-2 accueil w-button">Postuler</a><img loading="lazy" src="images/bouton-favori.png"
-        alt="" class="image-12"><img width="37" loading="lazy" alt="" src="images/generic-avatar.svg" class="image-13">
+      <a href="#" class="button-2 w-button">Postuler</a>
+      <button class="favoris-btn">☆</button>
+      <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
     </div>
     <div class="w-layout-cell cell-5">
-      <h2 class="heading-2">Entreprise</h2><img  loading="lazy" alt="" src="images/bandeau-offre.png"
-        class="image-9">
+      <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
+        class="image-5">
       <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
         elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
         vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
         posuere.</p>
-      <a href="#" class="button-2 accueil w-button">Postuler</a><img loading="lazy" src="images/bouton-favori.png"
-        alt="" class="image-14"><img width="37" loading="lazy" alt="" src="images/generic-avatar.svg" class="image-15">
+      <a href="#" class="button-2 w-button">Postuler</a>
+      <button class="favoris-btn">☆</button>
+      <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
+    </div>
+    <div class="w-layout-cell cell-5">
+      <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
+        class="image-5">
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+        vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
+        posuere.</p>
+      <a href="#" class="button-2 w-button">Postuler</a>
+      <button class="favoris-btn">☆</button>
+      <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
     </div>
   </div>
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
   <footer class="pied-de-page">
-    <div class="w-layout-hflex contacts"><img loading="lazy" src="images/instagram.svg" alt="" class="instagram"><img
-        loading="lazy" src="images/twitter.svg" alt="" class="twitter"><img loading="lazy" src="images/linkedin.svg"
-        alt="" class="linkedin"><img loading="lazy" src="images/facebook.svg" alt="" class="facebook"><img
-        loading="lazy" src="images/youtube.svg" alt="" class="image-8"></div>
+    <div class="w-layout-hflex contacts"><img src="images/instagram.svg" loading="lazy" alt="" class="instagram"><img
+        src="images/twitter.svg" loading="lazy" alt="" class="twitter"><img src="images/linkedin.svg" loading="lazy"
+        alt="" class="linkedin"><img src="images/facebook.svg" loading="lazy" alt="" class="facebook"><img
+        src="images/youtube.svg" loading="lazy" alt="" class="image-2"></div>
     <div class="mention-l-gales">© 2025 StageHorizon | Inc. Tous droits réservés CGU</div>
-    </footer>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67b49e8f9c9f8a910dad1bec"
-     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
-  <script src="js/webflow.js"></script>
+  </footer>
+
+  <footer class="pied-de-page">
+    <div class="w-layout-hflex contacts"><img src="images/instagram.svg" loading="lazy" alt="" class="instagram"><img
+        src="images/twitter.svg" loading="lazy" alt="" class="twitter"><img src="images/linkedin.svg" loading="lazy"
+        alt="" class="linkedin"><img src="images/facebook.svg" loading="lazy" alt="" class="facebook"><img
+        src="images/youtube.svg" loading="lazy" alt="" class="image-2"></div>
+    <div class="mention-l-gales">© 2025 StageHorizon | Inc. Tous droits réservés CGU</div>
+  </footer>
 </body>
 
 </html>
