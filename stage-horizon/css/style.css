@@ -1844,8 +1844,10 @@ textarea.w-select {
 }
 
 .w-nav-menu {
-  position: relative;
+  /*display: flex !important;*/
+  position: absolute;
   float: right;
+
 }
 
 [data-nav-menu-open] {
@@ -1909,7 +1911,6 @@ textarea.w-select {
   display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
   user-select: none;
 }
 

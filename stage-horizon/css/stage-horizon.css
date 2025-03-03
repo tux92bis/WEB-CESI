@@ -207,13 +207,28 @@ html, body {
 }
 
 .menu {
+  /*float: none;
+  clear: none;
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto; 
+  position: relative;
+  inset: 0% 0% auto auto;
+  width: fit-content;*/
   float: none;
   clear: none;
   text-align: right;
   margin-left: 300px;
   margin-right: 2px;
-  position: relative;
+  position: absolute;
   inset: 0% 0% auto auto;
+
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+
 }
 
 .pied-de-page {
@@ -269,7 +284,7 @@ html, body {
   padding-top: 10px;
   position: static;
 }
-
+/*
 .search {
   position: relative;
   top: -200px;
@@ -296,8 +311,35 @@ html, body {
   position: absolute;
   left: 200px;
   right: -200px;
+}*/
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+  margin-bottom: 20px;
 }
 
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: #f8f7f7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #e99e5d; 
+}
 .image-3 {
   position: relative;
   top: -41px;
@@ -470,11 +512,10 @@ html, body {
 }
 
 .image-7 {
-  margin-top: 3px;
-  margin-left: 17px;
-  position: relative;
-  top: 5px;
-  left: -8px;
+  position: absolute;
+  top: 5px; 
+  left: 10px;
+
 }
 
 .image-8 {
@@ -1131,3 +1172,4 @@ html, body {
   background-color: #ddd;
   border-color: #bbb;
 }
+
