@@ -845,13 +845,13 @@ html, body {
   background-color: var(--untitled-ui--primary700);
   border: 1px solid #000;
   border-radius: 20px;
-  width: 30%;
+  width: 40%;
   height: 20%;
   margin-left: 40px;
   margin-right: 10px;
-  position: relative;
-  top: -400px;
-  left: 450px;
+  position:absolute;
+  top: -450px;
+  left: 50px;
 }
 
 .list-item-5 {
