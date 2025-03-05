@@ -605,7 +605,7 @@ html, body {
 .offre {
   border: 1px solid #000;
   border-radius: 20px;
-  width: 70%;
+  max-width: 70%;
   height: auto;
   margin-bottom: 100px;
   position: relative;
@@ -617,8 +617,8 @@ html, body {
 .nom-entreprise {
   margin-top: -165px;
   padding-top: 10px;
-  position: relative;
-  top: -200px;
+  position: absolute;
+  top: -210px;
   left: 71px;
 }
 
@@ -627,7 +627,7 @@ html, body {
   border-style: none;
   border-color: #fff;
   border-radius: 0;
-  top: -194px;
+  top: 160px;
 }
 
 .image-19 {
@@ -643,9 +643,9 @@ html, body {
 
 .text-block-2 {
   font-weight: 700;
-  position: relative;
-  top: -35px;
-  left: 990px;
+  position: absolute;
+  top: 7px;
+  right: 15px;
 }
 
 .image-20 {
@@ -662,7 +662,7 @@ html, body {
 }
 
 .informations.offre {
-  top: 50px;
+  top: 60px;
   left: 62px;
 }
 
@@ -718,7 +718,7 @@ html, body {
   border-radius: 20px;
   margin-left: 60px;
   padding-left: 15px;
-  position: relative;
+  position:relative;
   top: 220px;
 }
 
@@ -802,19 +802,19 @@ html, body {
 
 .image-30 {
   width: 100%;
-  position: relative;
+  position:relative;
+  top:30px;
 }
 
 .objectifs {
   width: 30%;
-  position: relative;
-  top: -38px;
-  left: 56px;
+  position:relative;
+  left: 30px;
 }
 
 .list {
   width: 30%;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .list.objectifs {
@@ -824,7 +824,7 @@ html, body {
   border-radius: 18px;
   height: 20%;
   margin-right: 10px;
-  top: -540px;
+  top: 30px;
 }
 
 .list-item {
@@ -845,15 +845,14 @@ html, body {
   background-color: var(--untitled-ui--primary700);
   border: 1px solid #000;
   border-radius: 20px;
-  width: 40%;
+  max-width: 50%;
   height: 20%;
   margin-left: 40px;
   margin-right: 10px;
   position:absolute;
-  top: -450px;
-  left: 50px;
+  top: 465px;
+  left: 400px;
 }
-
 .list-item-5 {
   color: #fee;
   padding-top: 10px;
@@ -1004,9 +1003,10 @@ html, body {
 }
 
 .localisation {
-  position: relative;
+  position:relative;
   bottom: 44px;
-  left: 900px;
+  top:12px;
+  left: 720px;
 }
 
 .text-field-4 {
