@@ -62,19 +62,12 @@
 
   <section class="bandeau">
     <h1 class="slogan">Votre avenir commence ici !</h1>
-    <form action="/search" class="search w-form">
-      <label for="search"></label>
-      <input class="search-input w-input" autofocus maxlength="256" name="query"
-        placeholder="Rechercher intitulé offre de stage/alternance/entreprise" type="search" id="search" required="">
-      <img loading="lazy" src="images/icon.svg" alt="" class="image-33">
-      <input type="submit" class="search-button w-button" value="Rechercher">
-    </form>
   </section>
 
-  <section class="candidature">
-    <img src="images/generic-avatar.svg" loading="lazy" alt="" class="logo-entreprise">
-    <img src="images/map-pin.png" loading="lazy" alt="" class="icone-localisation">
-    <div class="localisation">Localisation</div>
+  <section class="section">
+    <img src="images/generic-avatar.svg" loading="lazy" alt="" class="image-4">
+    <img src="images/map-pin.png" loading="lazy" alt="" class="localisation">
+    <div class="text-block-2">Localisation</div>
     <h2 class="titre-offre">Nom de l&#x27;entreprise - Titre de l&#x27;offre</h2>
 
     <div class="w-form">
@@ -84,6 +77,10 @@
         <label for="name" class="nom">Prénom</label>
         <input class="text-field-4 w-input" maxlength="256" name="name" data-name="Name" 
           placeholder="Jean" type="text" id="name" required="">
+        
+          <label class="telephone">Téléphone</label>
+          <input class="telephone-label w-input" maxlength="256" name="name-3" data-name="Name 3"
+            placeholder="0102030405" type="text" id="name-3" required="">
 
         <label for="name-5" class="field-label-3">Nom</label>
         <input class="text-field-4 w-input" maxlength="256" name="name-5" data-name="Name 5" 
@@ -102,21 +99,12 @@
           <input type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" required="" class="w-checkbox-input">
           <span class="w-form-label">J&#x27;autorise le destinataire à stocker et traiter mes informations personnelles dans le cadre de ma candidature</span>
         </label>
-
-        <label class="field-label-5">Téléphone</label>
-        <input class="text-field-4 w-input" maxlength="256" name="name-3" data-name="Name 3"
-          placeholder="0102030405" type="text" id="name-3" required="">
-
-        <div class="cv">
-          <div class="text-block-3">Déposer mon CV et ma Lettre de Motivation</div>
-        </div>
-
-        <input type="submit" data-wait="Please wait..." class="submit-button-2 w-button" value="Envoyer">
+        <input type="submit" data-wait="Please wait..." class="button-2 w-button" value="Envoyer">
       </form>
     </div>
   </section>
 
-  <footer class="pied-de-page candidature">
+  <footer class="pied-de-page">
     <div class="w-layout-hflex contacts">
       <img loading="lazy" src="images/instagram.svg" alt="" class="instagram">
       <img loading="lazy" src="images/twitter.svg" alt="" class="twitter">
