@@ -1209,3 +1209,44 @@ html, body {
   overflow-x: hidden;
   margin-bottom: 100px;
 }
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.login-container {
+  width: 400px;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.login-container h2 {
+  margin-bottom: 1.5rem;
+}
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.login-container button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+.login-container button:hover {
+  background-color: #0056b3;
+}
