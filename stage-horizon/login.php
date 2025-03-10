@@ -1,3 +1,28 @@
+
+<?php
+require_once 'auth.php';
+
+if (estConnecte()) {
+    rediriger('accueil.php');
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $motDePasse = $_POST['motDePasse'];
+
+    $utilisateur = authentifierUtilisateur($email, $motDePasse);
+
+    if ($utilisateur) {
+        $_SESSION['utilisateur'] = $utilisateur;
+        rediriger('accueil.php');
+    } else {
+        $erreur = "Email ou mot de passe incorrect.";
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr" data-wf-page="67bf0b02b89e8d9fc73fa4f9" data-wf-site="67b49e8f9c9f8a910dad1bec">
 
@@ -31,7 +56,7 @@
   <div class="login-wrapper">
     <div class="login-container">
       <h2>Connexion à STAGE HORIZON</h2>
-      <form action="/login" method="POST">
+      <form action="login.php" method="POST">
         <input type="text" name="username" placeholder="Nom d'utilisateur" required>
         <input type="password" name="password" placeholder="Mot de passe" required>
         <button type="submit">Se connecter</button>
