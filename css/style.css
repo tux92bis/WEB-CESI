@@ -112,7 +112,8 @@ html.w-mod-touch * {
   text-decoration: none;
   cursor: pointer;
   border-radius: 0;
-  left: 73%;
+  
+ 
 }
 
 input.w-button {
@@ -824,6 +825,7 @@ textarea.w-select {
   .w-col-small-12 {
     width: 100%;
   }
+  
 }
 
 @media screen and (max-width: 479px) {

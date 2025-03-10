@@ -152,6 +152,8 @@ html, body {
 .container, .w-container, .w-layout-layout {
   max-width: 100%;
   overflow-x: hidden;
+  margin: auto;
+  padding: 0 15px;
 
 }
 * {
@@ -406,10 +408,9 @@ html, body {
 
 .heading-2 {
   position: relative;
-  top: -2px;
-  left: 60px;
+  top: -19px;
+  left: 41px;
   font-size: 16px;
-  
 
 }
 
@@ -467,7 +468,7 @@ html, body {
   font-weight: bold;
   position: absolute;
   bottom: 10px;
-  right: 16px;
+  right: 9px;
 
 }
 
@@ -649,7 +650,7 @@ html, body {
   padding-left: 10px;
 }
 
-.loclaisation {
+.localisation {
   position: relative;
   right: -900px;
 }
@@ -657,8 +658,8 @@ html, body {
 .text-block-2 {
   font-weight: 700;
   position: absolute;
-  top: 41px;
-  right: 15px;
+  top: 39px;
+  right: 5px;
 }
 
 .image-20 {
@@ -671,7 +672,7 @@ html, body {
   margin-bottom: 40px;
   padding-left: 10px;
   position: relative;
-  top: 100px;
+  top: 24px;
 }
 
 .informations.offre {
@@ -686,7 +687,7 @@ html, body {
   height: 100px;
   position: relative;
   top: -100px;
-  left: 800px;
+  left: 600px;
   box-shadow: 0 2px 5px 6px #0003;
 }
 
@@ -711,7 +712,7 @@ html, body {
 .link {
   position: relative;
   top: 20px;
-  left: 60px;
+  left: -6px;
 }
 
 .image-22 {
@@ -722,16 +723,18 @@ html, body {
 
 .link-2 {
   position: relative;
-  top: 56px;
-  left: -74px;
+  top: 44px;
+  left: -3px;
 }
 
 .afficher-offres {
   background-color: #ab2aa3;
   border-radius: 20px;
-  margin-left: 60px;
+  margin-left: 6px;
+  top: 331px;
   padding-left: 15px;
-  position:relative;
+  position: relative;
+  left: 680px;
 
 }
 
@@ -769,12 +772,18 @@ html, body {
 }
 
 .ajouter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer le contenu à l'intérieur */
+  position: relative;
+  width: 100px; /* Ajuste automatiquement la largeur en fonction du contenu */
+  padding: 5px 4px; /* Réduit l'espacement intérieur pour un bouton plus compact */
   background-color: #b321c6;
   border-radius: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-  top: 25px;
+  top: -23px;
+  left: 831px;
+  
+
 }
 
 .image-25 {
@@ -913,13 +922,13 @@ html, body {
   width: 80%;
   height: 80%;
   position: relative;
-  left: 200px;
+  left: 100px;
 }
 
 .text-field-2 {
   border-radius: 10px;
   width: 30%;
-  margin-left: 500px;
+  margin-left: 309px;
 }
 
 .text-field-3 {
@@ -930,7 +939,7 @@ html, body {
 
 .field-label {
   margin-top: 40px;
-  margin-left: 500px;
+  margin-left: 309px;
 }
 
 .field-label-2 {
@@ -962,7 +971,7 @@ html, body {
 .radio-button-field-2,
 .radio-button-field-3 {
   position: relative;
-  left: 500px;
+  left: 309px;
 }
 
 .submit-button {
@@ -970,7 +979,9 @@ html, body {
   border-radius: 20px;
   position: relative;
   bottom: -600px;
-  left: 800px;
+  left: 655px;
+  top: 42px;
+
 }
 
 .form-block-2 {
@@ -1002,8 +1013,8 @@ html, body {
 
 .titre-offre {
   position: relative;
-  top: -89px;
-  left: 98px;
+  top: -31px;
+  left: 58px;
 }
 
 .logo-entreprise {
@@ -1262,4 +1273,7 @@ html, body {
 }
 .login-container button:hover {
   background-color: #0056b3;
+}
+.depot{
+  margin-left: 309px;
 }

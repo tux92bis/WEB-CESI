@@ -31,13 +31,13 @@
     </a>
     
     <div class="menu w-container">
-      <nav class="w-nav-menu"></nav>
-      <a href="accueil.html" class="a">Accueil</a>
-      <a href="favoris.html" class="favoris">Favoris</a>
-      <a href="#" class="favoris">Offres de stage</a>
-      <a href="#" class="favoris">Candidatures</a>
-      <a href="#" class="favoris">Entreprises</a>
-      
+      <nav  class="navigation">
+        <a href="accueil.html" aria-current="page" class="a w--current">Accueil</a>
+        <a href="favoris.html" class="favoris">Favoris</a>
+        <a href="offre.html" class="favoris">Offres de stage</a>
+        <a href="candidature.html" class="favoris">Candidatures</a>
+        <a href="entreprise.html" class="favoris">Entreprises</a>
+      </nav>  
       <div class="w-nav-button">
         <div data-delay="50" data-hover="false" class="w-dropdown">
           <div class="compte w-dropdown-toggle">
@@ -98,6 +98,10 @@
           <input type="radio" data-name="statut" id="admin" name="statut" class="w-form-formradioinput w-radio-input" value="Admin">
           <span class="w-form-label">Admin</span>
         </label>
+        <div class="depot">
+          <p class="label1">Déposez votre CV</p>
+          <input type="file" id="fileInput" name="cv" required>
+        </div>
 
         <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Créer">
       </form>
