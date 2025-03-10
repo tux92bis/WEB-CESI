@@ -136,7 +136,7 @@
 
 .a.w--current {
   left:0 !important;
-  top: 0px;
+  top: 75px;
 }
 
 .body {
@@ -166,7 +166,7 @@ html, body {
   margin-right: 30px;
   text-decoration: none;
   position: relative;
-  top: 0px;
+  top: 75px;
 
 }
 
@@ -226,7 +226,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  
+
 
 }
 .navigation {
@@ -467,7 +467,7 @@ html, body {
   font-weight: bold;
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 16px;
 
 }
 
@@ -608,7 +608,7 @@ html, body {
 }
 
 .offre {
-  border: 1px solid #000;
+  /*border: 1px solid #000;
   border-radius: 20px;
   max-width: 70%;
   height: auto;
@@ -616,6 +616,14 @@ html, body {
   position: relative;
   top: 83px;
   left: 200px;
+  box-shadow: 0 2px 5px 5px #0003;*/
+  border: 1px solid #000;
+  border-radius: 20px;
+  max-width: 70%;
+  height: auto;
+  margin: 100px auto; 
+  padding: 20px; 
+  position: relative;
   box-shadow: 0 2px 5px 5px #0003;
 }
 
@@ -649,7 +657,7 @@ html, body {
 .text-block-2 {
   font-weight: 700;
   position: absolute;
-  top: 7px;
+  top: 41px;
   right: 15px;
 }
 
@@ -667,8 +675,8 @@ html, body {
 }
 
 .informations.offre {
-  top: 60px;
-  left: 62px;
+  top: -56px;
+  left: -123px;
 }
 
 .contact {
@@ -724,7 +732,7 @@ html, body {
   margin-left: 60px;
   padding-left: 15px;
   position:relative;
-  top: 220px;
+
 }
 
 .image-23 {
@@ -854,8 +862,8 @@ html, body {
   height: 20%;
   margin-left: 40px;
   margin-right: 10px;
-  position:absolute;
-  top: 465px;
+  position: absolute;
+  top: 598px;
   left: 400px;
 }
 .list-item-5 {
