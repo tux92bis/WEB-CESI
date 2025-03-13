@@ -1294,7 +1294,7 @@ textarea.w-select {
   user-select: none;
   display: inline-block;
   cursor: pointer;
-  padding-right: 40px;
+  padding-right: 60px;
 }
 
 .w-dropdown-toggle:focus {

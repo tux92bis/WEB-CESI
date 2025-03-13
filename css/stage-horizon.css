@@ -136,7 +136,7 @@
 
 .a.w--current {
   left:0 !important;
-  top: 30px;
+  top: 0px;
   
 }
 
@@ -169,7 +169,7 @@ html, body {
   margin-right: 30px;
   text-decoration: none;
   position: relative;
-  top: 30px;
+  top: 0px;
   left: 30px;
 }
 
@@ -178,7 +178,7 @@ html, body {
     margin-left: 17px;
     position: relative;
     top: -20px;
-    left: -10px;
+    left: 31px;
 }
 
 .text-block {
@@ -492,6 +492,7 @@ html, body {
   display: flex;
   align-items: center;
   font-size: 14px;
+  left: 50px;
 }
 
 .dropdown-link,
