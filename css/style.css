@@ -1273,6 +1273,7 @@ textarea.w-select {
   margin-left: auto;
   margin-right: auto;
   z-index: 900;
+  overflow: visible !important;
 }
 
 .w-dropdown-btn,
@@ -1312,21 +1313,35 @@ textarea.w-select {
 }
 
 .w-dropdown-list {
-  position: absolute;
-  background: #dddddd;
-  display: none;
-  min-width: 100%;
-}
+  position: fixed; /* Force l'affichage en dehors de la navbar */
+  top: 70px; /* Ajuste la hauteur par rapport à la navbar */
+  right: 20px; /* Aligne le menu à droite */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 99999; /* Met le menu au-dessus de tout */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  min-width: 220px;
+  padding: 10px;
 
-.w-dropdown-list.w--open {
-  display: block;
 }
-
+.w-dropdown-list.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 .w-dropdown-link {
-  padding: 10px 20px;
   display: block;
-  color: #222222;
+  padding: 10px 15px;
+  color: #222;
+  text-decoration: none;
+  transition: background 0.2s;
+
 }
+
 
 .w-dropdown-link.w--current {
   color: #0082f3;
