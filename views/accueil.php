@@ -114,6 +114,14 @@
           vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
           posuere.</p>
         <a href="#" class="button-2 w-button">Postuler</a>
+        <!-- From Uiverse.io by Jimdrer --> 
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+
         <button class="favoris-btn">☆</button>
         <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
       </div>

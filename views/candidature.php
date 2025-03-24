@@ -23,39 +23,40 @@
 </head>
 
 <body>
+  <header>
+    <div data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease"
+      role="banner" class="navbar w-nav">
+      <a href="#" class="w-nav-brand">
+        <img src="images/logo-site.png" loading="lazy" width="100"
+          sizes="(max-width: 479px) 71vw, 112.99479675292969px" alt=""
+          srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w">
+      </a>
+      <div class="menu w-container">
 
-  <div data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-    <a href="#" class="w-nav-brand">
-      <img width="113" sizes="112.99479675292969px" alt="" src="images/logo-site.png" loading="lazy"
-        srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w">
-    </a>
-    
-    <div class="menu w-container">
-      <nav  class="navigation">
-        <a href="accueil.html" aria-current="page" class="a w--current">Accueil</a>
-        <a href="favoris.html" class="favoris">Favoris</a>
-        <a href="offre.html" class="favoris">Offres de stage</a>
-        <a href="candidature.html" class="favoris">Candidatures</a>
-        <a href="entreprise.html" class="favoris">Entreprises</a>
-      </nav>  
-      <div class="w-nav-button">
-        <div data-delay="50" data-hover="false" class="w-dropdown">
-          <div class="compte w-dropdown-toggle">
-            <div class="w-icon-dropdown-toggle"></div>
-            <div>Compte</div>
-          </div>
-          <nav class="w-dropdown-list">
-            <a href="#" class="dropdown-link w-dropdown-link">Ajouter une offre</a>
-            <a href="#" class="dropdown-link w-dropdown-link">Ajouter un utilisateur</a>
-            <a href="#" class="dropdown-link w-dropdown-link">Ajouter une entreprise</a>
-          </nav>
+        <nav  class="navigation">
+          <a href="accueil.html" aria-current="page" class="a w--current">Accueil</a>
+          <a href="favoris.html" class="favoris">Favoris</a>
+          <a href="offre.html" class="favoris">Offres de stage</a>
+          <a href="candidature.html" class="favoris">Candidatures</a>
+          <a href="entreprise.html" class="favoris">Entreprises</a>
+        </nav>
+        <div  class="w-nav-button">
+          <div data-hover="false" data-delay="50" class="w-dropdown">
+            <div class="compte w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div> Compte</div>
+            </div>
+            <nav class="w-dropdown-list">
+              <a href="creer-offre.html" class="dropdown-link w-dropdown-link">Ajouter une offre</a>
+              <a href="candidature2.html" class="dropdown-link-2 w-dropdown-link">Ajouter un utilisateur</a>
+              <a href="creer-offre2.html" class="dropdown-link-3 w-dropdown-link">Ajouter une entreprise</a>
+            </nav>
+          </div><img src="images/generic-avatar.svg" loading="lazy" width="36" alt="" class="image">
         </div>
-        <img width="36" loading="lazy" alt="" src="images/generic-avatar.svg" class="image-16">
       </div>
     </div>
-  </div>
-
-
+  </header>
+  
   <section class="bandeau">
     <h1 class="slogan">Votre avenir commence ici !</h1>
 
@@ -83,7 +84,9 @@
 
         <label for="confirm-password" class="field-label">Confirmer le mot de passe</label>
         <input class="text-field-2 w-input" maxlength="256" name="confirm-password" data-name="Confirm Password" placeholder="monmotdepasse123" type="password" id="confirm-password" required="">
-
+        <div id="error" class=" error">
+          <span id="errorText" for=""> Les mots de passe saisis ne correspondent pas. Veuillez vérifier et réessayer. </span>
+        </div>
         <label class="radio-button-field w-radio">
           <input type="radio" data-name="statut" id="tuteur" name="statut" class="w-form-formradioinput w-radio-input" value="Tuteur">
           <span class="w-form-label">Tuteur</span>
@@ -102,6 +105,8 @@
           <p class="label1">Déposez votre CV</p>
           <input type="file" id="fileInput" name="cv" required>
         </div>
+
+
 
         <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Créer">
       </form>
@@ -122,6 +127,7 @@
       © 2025 StageHorizon | Inc. Tous droits réservés CGU
     </div>
   </footer>
+  <script src="js/script.js" defer></script>
 
   
 </body>

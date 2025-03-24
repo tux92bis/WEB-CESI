@@ -23,7 +23,7 @@
           srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w">
       </a>
       <div class="menu w-container">
-        
+
         <nav  class="navigation">
           <a href="accueil.html" aria-current="page" class="a w--current">Accueil</a>
           <a href="favoris.html" class="favoris">Favoris</a>
@@ -31,7 +31,6 @@
           <a href="candidature.html" class="favoris">Candidatures</a>
           <a href="entreprise.html" class="favoris">Entreprises</a>
         </nav>
-
         <div  class="w-nav-button">
           <div data-hover="false" data-delay="50" class="w-dropdown">
             <div class="compte w-dropdown-toggle">
@@ -39,15 +38,17 @@
               <div> Compte</div>
             </div>
             <nav class="w-dropdown-list">
-              <a href="#" class="dropdown-link w-dropdown-link">Ajouter une offre</a>
-              <a href="#" class="dropdown-link-2 w-dropdown-link">Ajouter un utilisateur</a>
-              <a href="#" class="dropdown-link-3 w-dropdown-link">Ajouter une entreprise</a>
+              <a href="creer-offre.html" class="dropdown-link w-dropdown-link">Ajouter une offre</a>
+              <a href="candidature2.html" class="dropdown-link-2 w-dropdown-link">Ajouter un utilisateur</a>
+              <a href="creer-offre2.html" class="dropdown-link-3 w-dropdown-link">Ajouter une entreprise</a>
             </nav>
           </div><img src="images/generic-avatar.svg" loading="lazy" width="36" alt="" class="image">
         </div>
       </div>
     </div>
   </header>
+
+
   <section class="bandeau">
     <h1 class="slogan"> Votre avenir commence ici !</h1>
     <div class="search-bar-container">
@@ -66,7 +67,26 @@
         vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
         posuere.</p>
       <a href="#" class="button-2 w-button">Postuler</a>
-      <button class="favoris-btn">☆</button>
+      <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
+      <button class="btn">
+        <svg viewBox="0 0 15 17.5" height="17.5" width="15" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path transform="translate(-2.5 -1.25)" d="M15,18.75H5A1.251,1.251,0,0,1,3.75,17.5V5H2.5V3.75h15V5H16.25V17.5A1.251,1.251,0,0,1,15,18.75ZM5,5V17.5H15V5Zm7.5,10H11.25V7.5H12.5V15ZM8.75,15H7.5V7.5H8.75V15ZM12.5,2.5h-5V1.25h5V2.5Z" id="Fill"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="w-layout-cell cell-5">
+      <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
+        class="image-5">
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+        vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
+        posuere.</p>
+      <a href="#" class="button-2 w-button">Postuler</a>
+      <button class="btn">
+        <svg viewBox="0 0 15 17.5" height="17.5" width="15" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path transform="translate(-2.5 -1.25)" d="M15,18.75H5A1.251,1.251,0,0,1,3.75,17.5V5H2.5V3.75h15V5H16.25V17.5A1.251,1.251,0,0,1,15,18.75ZM5,5V17.5H15V5Zm7.5,10H11.25V7.5H12.5V15ZM8.75,15H7.5V7.5H8.75V15ZM12.5,2.5h-5V1.25h5V2.5Z" id="Fill"></path>
+        </svg>
+      </button>
       <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
     </div>
     <div class="w-layout-cell cell-5">
@@ -77,7 +97,11 @@
         vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
         posuere.</p>
       <a href="#" class="button-2 w-button">Postuler</a>
-      <button class="favoris-btn">☆</button>
+      <button class="btn">
+        <svg viewBox="0 0 15 17.5" height="17.5" width="15" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path transform="translate(-2.5 -1.25)" d="M15,18.75H5A1.251,1.251,0,0,1,3.75,17.5V5H2.5V3.75h15V5H16.25V17.5A1.251,1.251,0,0,1,15,18.75ZM5,5V17.5H15V5Zm7.5,10H11.25V7.5H12.5V15ZM8.75,15H7.5V7.5H8.75V15ZM12.5,2.5h-5V1.25h5V2.5Z" id="Fill"></path>
+        </svg>
+      </button>
       <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
     </div>
     <div class="w-layout-cell cell-5">
@@ -88,18 +112,11 @@
         vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
         posuere.</p>
       <a href="#" class="button-2 w-button">Postuler</a>
-      <button class="favoris-btn">☆</button>
-      <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
-    </div>
-    <div class="w-layout-cell cell-5">
-      <h2 class="heading-2">Entreprise</h2><img src="images/bandeau-offre.png" loading="lazy" alt=""
-        class="image-5">
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-        vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
-        posuere.</p>
-      <a href="#" class="button-2 w-button">Postuler</a>
-      <button class="favoris-btn">☆</button>
+      <button class="btn">
+        <svg viewBox="0 0 15 17.5" height="17.5" width="15" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path transform="translate(-2.5 -1.25)" d="M15,18.75H5A1.251,1.251,0,0,1,3.75,17.5V5H2.5V3.75h15V5H16.25V17.5A1.251,1.251,0,0,1,15,18.75ZM5,5V17.5H15V5Zm7.5,10H11.25V7.5H12.5V15ZM8.75,15H7.5V7.5H8.75V15ZM12.5,2.5h-5V1.25h5V2.5Z" id="Fill"></path>
+        </svg>
+      </button>
       <img src="images/generic-avatar.svg" loading="lazy" width="37" alt="" class="image-4">
     </div>
   </div>
@@ -120,6 +137,7 @@
         src="images/youtube.svg" loading="lazy" alt="" class="image-2"></div>
     <div class="mention-l-gales">© 2025 StageHorizon | Inc. Tous droits réservés CGU</div>
   </footer>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>

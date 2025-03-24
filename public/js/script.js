@@ -1,3 +1,4 @@
+/*menu compte*/
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownToggle = document.querySelector(".compte");
     const dropdownList = document.querySelector(".w-dropdown-list");
@@ -18,24 +19,37 @@ document.addEventListener("DOMContentLoaded", function () {
         event.stopPropagation();
     });
 });
-
-
-
-/*
+/*Bouton Favoris*/
 document.addEventListener("DOMContentLoaded", function () {
-    const dropdownToggle = document.querySelector(".compte");
-    const dropdownList = document.querySelector(".w-dropdown-list");
-    
-    dropdownToggle.addEventListener("click", function (event) {
-        event.stopPropagation(); // Empêche la propagation de l'événement vers le document
-        dropdownList.classList.toggle("active");
+    const buttons = document.querySelectorAll(".favoris-btn");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            button.classList.toggle("favori-active");
+            button.textContent = button.classList.contains("favori-active") ? "★" : "☆";
+        });
     });
-    
-    document.addEventListener("click", function () {
-        dropdownList.classList.remove("active");
+});
+/* Formulaire */
+/*comparaison motde passe */
+document.addEventListener("DOMContentLoaded", () => {
+    let form = document.getElementById("email-form");
+    let password = document.getElementById("password");
+    let confirmPassword = document.getElementById("confirm-password");
+    let errorDiv = document.getElementById("error");
+    let errorText = document.getElementById("errorText");
+
+    // Cache le message d'erreur au chargement de la page
+    errorDiv.style.display = "none";
+
+    // Vérification au clic sur "Créer"
+    form.addEventListener("submit", (event) => {
+        if (password.value !== confirmPassword.value) {
+            errorText.textContent = "Les mots de passe ne correspondent pas.";
+            errorDiv.style.display = "block";
+            event.preventDefault(); // Empêche la soumission du formulaire
+        } else {
+            errorDiv.style.display = "none";
+        }
     });
-    
-    dropdownList.addEventListener("click", function (event) {
-        event.stopPropagation(); // Empêche la fermeture lors d'un clic sur la liste
-    });
-});*/
+});

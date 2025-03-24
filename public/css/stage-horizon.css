@@ -418,12 +418,13 @@ html, body {
   position: absolute;
   right: 0;
   top: 20px;
-
+  transition: color 0.3s ease;
+  color:#000;
   
  
 }
-.favoris-btn.favori {
-  color: gold;
+.favoris-btn.favori-active {
+  color: rgba(224, 188, 8, 0.878);
 }
 /*
 .button-2 {
@@ -452,12 +453,20 @@ html, body {
 }
 
 .navbar {
-
+  /*
   position: sticky;
   height: 90px; /* Diminue la hauteur */
-  display: flex;
+  /*display: flex;
   align-items: center; /* Centre verticalement */
-  padding: 5px 10px;
+  /*padding: 5px 10px;*/
+  position: fixed; /* Fixe la navbar en haut */
+  top: 0; /* La colle tout en haut */
+  left: 0;
+  width: 100%; /* S'étend sur toute la largeur */
+  background: #dddddd; /* Couleur de fond */
+  z-index: 1000; /* Assure qu'elle reste au-dessus des autres éléments */
+  padding: 10px 20px; /* Ajuste l'espacement */
+  height: 70px;
 }
 
 .flex-block {
@@ -480,6 +489,12 @@ html, body {
   padding-left: 10px;
   position: relative;
   top: -60px;
+
+  background: white; 
+  border: 1.5px solid #333; 
+  border-radius: 8px; 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .checkbox-field {
@@ -492,7 +507,7 @@ html, body {
   display: flex;
   align-items: center;
   font-size: 14px;
-  left: 50px;
+  left: 30px;
 }
 
 .dropdown-link,
@@ -602,8 +617,8 @@ html, body {
   top: 83px;
   left: 200px;
   box-shadow: 0 2px 5px 5px #0003;*/
-  border: 1px solid #000;
-  border-radius: 20px;
+  
+  
   max-width: 70%;
   height: auto;
   margin: 100px auto; 
@@ -656,7 +671,7 @@ html, body {
   margin-bottom: 40px;
   padding-left: 10px;
   position: relative;
-  top: 24px;
+  top: 40px;
 }
 
 .informations.offre {
@@ -715,7 +730,18 @@ html, body {
   background-color: #ab2aa3;
   border-radius: 20px;
   margin-left: 6px;
-  top: 331px;
+  top: 330px;
+  padding-left: 15px;
+  position: relative;
+  left: 680px;
+
+}
+
+.afficher-offres-1 {
+  background-color: #ab2aa3;
+  border-radius: 20px;
+  margin-left: 6px;
+  top: 0px;
   padding-left: 15px;
   position: relative;
   left: 680px;
@@ -824,17 +850,17 @@ html, body {
 }
 
 .list.objectifs {
-  background-color: var(--untitled-ui--primary700);
+ 
   color: #fff;
-  border: 1px solid #000;
+ 
   border-radius: 18px;
   height: 20%;
   margin-right: 10px;
-  top: 30px;
+  top: -104px;
 }
 
 .list-item {
-  color: #fff;
+  color: #1c1b1b;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -848,16 +874,22 @@ html, body {
 }
 
 .comp-tences {
-  background-color: var(--untitled-ui--primary700);
-  border: 1px solid #000;
-  border-radius: 20px;
-  max-width: 50%;
+
+  width: 30%;
+  position:relative;
+  left: 385px;
+  
+  width: 30%;
+  margin-left: 30px;
+
+  color: #fff;
+   
+  border-radius: 18px;
   height: 20%;
-  margin-left: 40px;
   margin-right: 10px;
-  position: absolute;
-  top: 598px;
-  left: 400px;
+  top: 66px;
+
+
 }
 .list-item-5 {
   color: #fee;
@@ -1260,4 +1292,62 @@ html, body {
 }
 .depot{
   margin-left: 309px;
+}
+.error{
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  width: fit-content; 
+  color: red; 
+  font-weight: bold; 
+  font-size: 12px; 
+  font-weight: normal;
+ 
+}
+.btn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  top: -290px;
+  right: -420px;
+
+}
+
+.btn::after {
+  content: 'delete';
+  position: absolute;
+  top: -130%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(168, 7, 7);
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: .2s linear;
+  transition-delay: .2s;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon {
+  transform: scale(1.2);
+  transition: .2s linear;
+}
+
+.btn:hover > .icon {
+  transform: scale(1.5);
+}
+
+.btn:hover > .icon path {
+  fill: rgb(168, 7, 7);
+}
+
+.btn:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: -160%;
 }

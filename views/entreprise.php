@@ -13,34 +13,42 @@
 </head>
 
 <body>
-  <div data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-    <a href="#" class="w-nav-brand"><img width="113" sizes="(max-width: 479px) 58vw, 112.99479675292969px" alt="" src="images/logo-site.png" loading="lazy" srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w"></a>
-    <div class="menu w-container">
-      
-      <nav  class="navigation">
-        <a href="accueil.html" aria-current="page" class="a w--current">Accueil</a>
-        <a href="favoris.html" class="favoris">Favoris</a>
-        <a href="offre.html" class="favoris">Offres de stage</a>
-        <a href="candidature.html" class="favoris">Candidatures</a>
-        <a href="entreprise.html" class="favoris">Entreprises</a>
-      </nav>
+  <header>
+    <div data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease"
+      role="banner" class="navbar w-nav">
+      <a href="#" class="w-nav-brand">
+        <img src="images/logo-site.png" loading="lazy" width="100"
+          sizes="(max-width: 479px) 71vw, 112.99479675292969px" alt=""
+          srcset="images/logo-site-p-500.png 500w, images/logo-site.png 577w">
+      </a>
+      <div class="menu w-container">
 
-      <div class="w-nav-button">
-        <div data-delay="50" data-hover="false" class="w-dropdown">
-          <div class="compte w-dropdown-toggle">
-            <div class="w-icon-dropdown-toggle"></div>
-            <div>Compte</div>
-          </div>
-          <nav class="w-dropdown-list">
-            <a href="#" class="dropdown-link w-dropdown-link">Ajouter une offre</a>
-            <a href="#" class="dropdown-link w-dropdown-link">Ajouter un utilisateur</a>
-            <a href="#" class="dropdown-link w-dropdown-link">Ajouter une entreprise</a>
-          </nav>
+        <nav  class="navigation">
+          <a href="accueil.html" aria-current="page" class="a w--current">Accueil</a>
+          <a href="favoris.html" class="favoris">Favoris</a>
+          <a href="offre.html" class="favoris">Offres de stage</a>
+          <a href="candidature.html" class="favoris">Candidatures</a>
+          <a href="entreprise.html" class="favoris">Entreprises</a>
+        </nav>
+        <div  class="w-nav-button">
+          <div data-hover="false" data-delay="50" class="w-dropdown">
+            <div class="compte w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div> Compte</div>
+            </div>
+            <nav class="w-dropdown-list">
+              <a href="creer-offre.html" class="dropdown-link w-dropdown-link">Ajouter une offre</a>
+              <a href="candidature2.html" class="dropdown-link-2 w-dropdown-link">Ajouter un utilisateur</a>
+              <a href="creer-offre2.html" class="dropdown-link-3 w-dropdown-link">Ajouter une entreprise</a>
+            </nav>
+          </div><img src="images/generic-avatar.svg" loading="lazy" width="36" alt="" class="image">
         </div>
-        <img width="36" loading="lazy" alt="" src="images/generic-avatar.svg" class="image-16">
       </div>
     </div>
-  </div>
+  </header>
+
+
+
   
   <section class="bandeau">
     <h1 class="slogan">Votre avenir commence ici !</h1>
@@ -60,8 +68,16 @@
       <img src="images/phone.png" loading="lazy" alt="" class="image-22">
       <img src="images/mail.png" loading="lazy" alt="" class="image-21">
     </div>
+    <div>
+      <p> Evaluez l'entreprise</p>
+      <button>☆</button>
+      <button>☆</button>
+      <button>☆</button>
+      <button>☆</button>
+
+    </div>
   </section>
-  
+
   <footer class="pied-de-page">
     <div class="w-layout-hflex contacts">
       <img loading="lazy" src="images/instagram.svg" alt="" class="instagram">
@@ -72,6 +88,7 @@
     </div>
     <div class="mention-l-gales">© 2025 StageHorizon | Inc. Tous droits réservés CGU</div>
   </footer>
+  <script src="js/script.js" defer></script>
   
 </body>
 </html>
