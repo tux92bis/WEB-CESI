@@ -10,20 +10,12 @@ ini_set('display_errors', 1);
 // Inclure la configuration de la base de données
 require_once(ROOT_PATH . '/config/database.php');
 
-// Routage simple
-$controller = isset($_GET['controller']) ? $_GET['controller'] : 'login';
+// Routage
+$controller = isset($_GET['controller']) ? $_GET['controller'] : 'accueil';
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
 // Charger le contrôleur approprié
+require_once(ROOT_PATH . "/controllers/{$controller}Controller.php");
 $controllerName = ucfirst($controller) . 'Controller';
-$controllerFile = ROOT_PATH . "/controllers/{$controllerName}.php";
-
-if (file_exists($controllerFile)) {
-    require_once($controllerFile);
-    $controller = new $controllerName();
-    $controller->$action();
-} else {
-    // Gérer l'erreur 404
-    header("HTTP/1.0 404 Not Found");
-    exit('Page non trouvée');
-}
+$controllerInstance = new $controllerName();
+$controllerInstance->$action();

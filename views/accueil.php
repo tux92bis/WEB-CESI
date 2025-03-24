@@ -1,4 +1,9 @@
 <?php
+// Définir BASE_URL si ce n'est pas déjà fait
+if (!defined('BASE_URL')) {
+  define('BASE_URL', '/');
+}
+
 echo "Document Root: " . $_SERVER['DOCUMENT_ROOT'] . "<br>";
 echo "Script Filename: " . $_SERVER['SCRIPT_FILENAME'] . "<br>";
 echo "Request URI: " . $_SERVER['REQUEST_URI'] . "<br>";
