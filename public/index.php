@@ -1,6 +1,7 @@
 <?php
 // Définir le chemin racine de l'application
 define('ROOT_PATH', dirname(__DIR__));
+define('BASE_URL', '/');
 
 // Activer l'affichage des erreurs pendant le développement
 error_reporting(E_ALL);
