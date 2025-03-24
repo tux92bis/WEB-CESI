@@ -1,3 +1,8 @@
+<?php
+echo "Document Root: " . $_SERVER['DOCUMENT_ROOT'] . "<br>";
+echo "Script Filename: " . $_SERVER['SCRIPT_FILENAME'] . "<br>";
+echo "Request URI: " . $_SERVER['REQUEST_URI'] . "<br>";
+?>
 <!DOCTYPE html>
 <html lang="fr" data-wf-page="67b49e8f9c9f8a910dad1bf7" data-wf-site="67b49e8f9c9f8a910dad1bec">
 
@@ -7,9 +12,9 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="/css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="/css/style.css" rel="stylesheet" type="text/css">
-  <link href="/css/stage-horizon.css" rel="stylesheet" type="text/css">
+  <link href="<?= BASE_URL ?>css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="<?= BASE_URL ?>css/style.css" rel="stylesheet" type="text/css">
+  <link href="<?= BASE_URL ?>css/stage-horizon.css" rel="stylesheet" type="text/css">
   <script>!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
   <img src="/images/logo-site.png" loading="lazy" width="100" sizes="(max-width: 479px) 71vw, 112.99479675292969px"
     alt="" srcset="/images/logo-site-p-500.png 500w, /images/logo-site.png 577w">
