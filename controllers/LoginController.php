@@ -1,22 +1,26 @@
 <?php
-class LoginController {
+class LoginController
+{
     private $userModel;
-    
-    public function __construct() {
-        require_once('../models/UserModel.php');
+
+    public function __construct()
+    {
+        require_once(ROOT_PATH . '/models/UserModel.php');
         $this->userModel = new UserModel();
     }
-    
-    public function index() {
+
+    public function index()
+    {
         // Afficher la page de connexion
-        require_once('../views/layouts/default.php');
+        require_once(ROOT_PATH . '/views/layouts/default.php');
     }
-    
-    public function authenticate() {
+
+    public function authenticate()
+    {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $username = $_POST['username'];
             $password = $_POST['password'];
-            
+
             if ($this->userModel->verifyUser($username, $password)) {
                 // Démarrer la session et rediriger
                 session_start();
