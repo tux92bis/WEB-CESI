@@ -53,3 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+/*suppression d'une offre*/
+function supprimerOffre() {
+    const confirmation = confirm("Voulez-vous vraiment supprimer cette offre ?");
+    if (confirmation) {
+      alert("Offre supprimée !");
+    }
+      
+}
