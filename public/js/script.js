@@ -61,3 +61,27 @@ function supprimerOffre() {
     }
       
 }
+/*gratification*/
+const priceRange = document.getElementById('priceRange');
+const priceValue = document.getElementById('priceValue');
+
+priceRange.addEventListener('input', () => {
+  priceValue.textContent = priceRange.value;
+});
+/*evaluation*/
+const stars = document.querySelectorAll('.star');
+const note = document.getElementById('note');
+
+stars.forEach((star, index) => {
+  star.addEventListener('click', () => {
+    // Met à jour les étoiles sélectionnées
+    stars.forEach((s, i) => {
+      s.classList.toggle('selected', i <= index);
+    });
+
+    // Affiche la note
+    note.textContent = `Vous avez donné une note de ${index + 1} / 4`;
+  });
+});
+
+

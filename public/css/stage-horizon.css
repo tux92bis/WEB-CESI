@@ -142,8 +142,10 @@
 }
 
 .body {
-  background-color: #fff;
-  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 html, body {
   overflow-x: hidden;
@@ -191,24 +193,18 @@ html, body {
 }
 
 .slogan {
-  background-image: url('../images/sunset.jpeg');
+  background-image: url(../images/image.png);
   background-position: 50% 35%;
   background-attachment: scroll;
-  margin-top: 0;
-  padding-top: 100px;
+  margin-top: -40px;
+  padding-top: 288px;
   padding-bottom: 40px;
   padding-left: 20px;
   font-weight: 700;
 }
 
-.bandeau {
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
-  background-position: 0 0;
-  background-size: auto;
-  height: 180px;
-  position: relative;
-  top: 2px;
-}
+
+
 
 .menu {
   /*float: none;
@@ -332,7 +328,7 @@ html, body {
 
 .filtres {
   position: relative;
-  top: 220px;
+  top: 75px;
 }
 
 .offres {
@@ -344,7 +340,7 @@ html, body {
   width: 70%;
   height: auto;
   position: relative;
-  top: -83px;
+  top: -276px;
   left: 90px;
   
 }
@@ -485,15 +481,14 @@ html, body {
 }
 
 .form {
-  width: 15%;
-  margin-left: 20px;
+  width: 16%;
+  margin-left: 18px;
   padding-left: 10px;
   position: relative;
   top: -60px;
-
-  background: white; 
-  border: 1.5px solid #333; 
-  border-radius: 8px; 
+  background: white;
+  border: #c0b4b4;
+  border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 
 }
@@ -1462,4 +1457,76 @@ html, body {
 }
 #checkbox3:checked + .modifsupp {
   display: block;
+}
+.price-slider {
+  width: 89%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: -8px;
+
+ 
+}
+
+.price-display {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #850772;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #4c0251;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+#stars {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.star {
+  font-size: 40px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: gold;
+}
+
+.star.selected {
+  color: gold;
+}
+
+#note {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
